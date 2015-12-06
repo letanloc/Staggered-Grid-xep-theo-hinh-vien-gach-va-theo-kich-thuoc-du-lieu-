@@ -1,12 +1,13 @@
 
 
-
+#Demo 
 ![screenshot from 2015-12-06 10 29 08](https://cloud.githubusercontent.com/assets/10550810/11611528/856746d0-9c05-11e5-9069-e5945ba14bff.png)
 
 
 
 
 # Tạo một class Adater
+```java  
 package com.loc.myapplication.Adapter;
 
 import android.content.Context;
@@ -134,6 +135,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Viewhole> {
         }
     }
 }
+```
 # ở item_xml 
 
 <?xml version="1.0" encoding="utf-8"?>
@@ -177,6 +179,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Viewhole> {
 
 </LinearLayout>
 # tại main.java
+```java 
 
 package com.loc.myapplication;
 
@@ -205,7 +208,11 @@ public class MainActivity extends AppCompatActivity {
         recyclerView    .addItemDecoration(decoration);
     }
 }
+```
+
 # tạo một class  để cân chỉnh khoản cách cho các item list
+```java 
+
 package com.loc.myapplication.Untils;
 
 import android.graphics.Rect;
@@ -243,7 +250,11 @@ public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
 
     }
 }
-# compile thư  viên recy
+```
 
-`  compile 'com.android.support:recyclerview-v7:23.1.1'
+# compile thư  viên recy
+```
+compile 'com.android.support:recyclerview-v7:23.1.1'
+```
+`  
   
